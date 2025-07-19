@@ -179,6 +179,53 @@ main > section {
     filter: grayscale(100%);
 }
 
+/* feature section */
+
+.features{
+    gap: 140px;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.feature-card{
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+        margin-bottom: 20px;
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem; 
+    font-weight: 700;
+}
+.feature-architect img{
+    width: 100%;
+}
+
+/* footer section */
+footer{
+    
+    margin: 50px 200px 50px 120px;
+    border-radius: 8px;
+     text-align: center;
+     padding: 20px;
+
+}
 
 /* responsive media query */
 
@@ -187,7 +234,7 @@ main > section {
 @media screen and (max-width : 576px) {
     /* responsive navbar section */
 
-    .navbar , .nav-links , .teams{
+    .navbar , .nav-links , .teams, .features{
         flex-direction: column;
     }
     
@@ -206,13 +253,20 @@ main > section {
         .section-title,.fact-description{
             text-align: center;
         }
+         #experience-badge{
+                margin-top: 20px;
+                margin-left: 20px;
+                }
+        footer{
+            margin: 50px auto;
+        }
 }
 
 /* for medium device */
 
 @media screen and (min-width : 576px) and (max-width: 992px){
     /* responsive navbar section */
-    .teams {
+    .teams , .features{
         flex-direction: column;
     }
         .team-img-container , .facts-container {
@@ -240,4 +294,11 @@ main > section {
              .section-title{
                       text-align: center;
                               }
+              #experience-badge {
+                              margin: 30px 200px 0 290px;
+                              
+                          }
+             footer {
+                  margin: 50px auto;
+                       }
 }
